@@ -1,0 +1,49 @@
+\begin{thebibliography}{}
+
+\bibitem[Black and Scholes, 1973]{black1973}
+Black, F. and Scholes, M. (1973).
+\newblock {The Pricing of Options and Corporate Liabilities}.
+\newblock {\em Journal of Political Economy}, 81(3):637--654.
+
+\bibitem[García~Castillo, 2026]{curso2026}
+García~Castillo, F. (2026).
+\newblock {P26-LAT4092-1: Temas Selectos III. Derivados Exóticos}.
+\newblock Material de curso, Universidad de las Américas Puebla.
+\newblock Primavera 2026.
+
+\bibitem[Hull, 2018]{hull2018}
+Hull, J.~C. (2018).
+\newblock {\em {Options, Futures, and Other Derivatives}}.
+\newblock Pearson, 10th edition.
+
+\bibitem[Kemna and Vorst, 1990]{kemna1990}
+Kemna, A. G.~Z. and Vorst, A. C.~F. (1990).
+\newblock {A Pricing Method for Options Based on Average Asset Values}.
+\newblock {\em Journal of Banking \& Finance}, 14(1):113--129.
+
+\bibitem[{PEMEX Consolidated}, 2024]{pemex2024sec}
+{PEMEX Consolidated} (2024).
+\newblock {Quarterly Financial Information, 4Q 2024}.
+\newblock Reporte ante la SEC, anexo de instrumentos financieros derivados,
+  Tabla 2.
+\newblock Disponible en:
+  \url{https://www.sec.gov/Archives/edgar/data/932782/000093278225000003/pemexform6-k4qp2024trans.htm}.
+
+\bibitem[{Petróleos Mexicanos}, 2025]{pemex2025estados}
+{Petróleos Mexicanos} (2025).
+\newblock {Estados financieros consolidados dictaminados 2025}.
+\newblock Nota 18, pp. 105--106.
+\newblock Disponible en:
+  \url{https://www.pemex.com/ri/finanzas/Resultados\%20anuales/E.F.\%20Consolidados\%202025.pdf}.
+
+\bibitem[Shreve, 2004]{shreve2004}
+Shreve, S.~E. (2004).
+\newblock {\em {Stochastic Calculus for Finance II: Continuous-Time Models}}.
+\newblock Springer.
+
+\bibitem[Turnbull and Wakeman, 1991]{turnbull1991}
+Turnbull, S.~M. and Wakeman, L.~M. (1991).
+\newblock {A Quick Algorithm for Pricing European Average Options}.
+\newblock {\em Journal of Financial and Quantitative Analysis}, 26(3):377--389.
+
+\end{thebibliography}

@@ -1,0 +1,6 @@
+# the onedrive folder
+/onedrive/
+
+# local sync / recording artifacts
+*.mp4
+desktop.ini

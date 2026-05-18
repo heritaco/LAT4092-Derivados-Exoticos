@@ -166,4 +166,26 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# %%
+
+# ---------- Main ----------
+def main():
+    S0 = 35
+    sigma = 0.31
+    r = 0.05
+    K = 32
+    q = 0.0
+    T = 9 / 12
+    t = 0.0
+
+    N = 400  # increase for accuracy
+
+    plot_payoff(S0, K, r, q, T, t, sigma, N)
+    summary(S0, K, r, q, T, t, sigma, N)
+
+
+if __name__ == "__main__":
+    main()
 # %%
