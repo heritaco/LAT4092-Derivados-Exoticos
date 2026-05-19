@@ -113,43 +113,7 @@ En empresas como Pemex, sus ingresos por venta de crudo están expuestos al prec
 
 Pemex muestra que el resultado contable de los derivados puede ser positivo o negativo, según el movimiento de los precios y las condiciones de los contratos. En sus estados financieros dictaminados de 2025, Pemex reportó un rendimiento neto por instrumentos financieros derivados de \(21{,}587{,}903\) miles de pesos en 2025, frente a un costo neto de \(27{,}594{,}230\) miles de pesos en 2024; para opciones de crudo, reportó \(2{,}288{,}069\) miles de pesos en 2025 y \(-898{,}527\) miles de pesos en 2024 \citep{pemex2025estados}. No es que la cobertura sea favorable o desfavorable por sí misma, ya que su función es transformar el perfil de riesgo. Si una empresa quisiera protegerse contra una caída sostenida en el precio promedio del petróleo, una put asiática podría ser más representativa que una put vanilla, porque su pago dependería del promedio observado y no únicamente del precio final. Este tipo de derivado reduce la posibilidad de que un movimiento extremo en una sola fecha determine toda la compensación de la cobertura.
 
-Una vez notada la importancia de este tipo de instrumentos, el problema a resolver consiste en valuar opciones asiáticas de venta con promedio geométrico y aritmético. El promedio geométrico permite obtener una fórmula cerrada, mientras que el promedio aritmético requiere una aproximación por momentos. Finalmente, los resultados se comparan con la prima de una opción vanilla europea con los mismos parámetros.
-
-\section{Hipótesis utilizadas}
-
-El caso de estudio consiste en valuar una opción put asiática escrita sobre un activo subyacente con precio inicial \(S_0=80\), precio de ejercicio \(K=85\) y plazo de vencimiento de tres meses. Se supone una tasa libre de riesgo anual de \(r=5\%\), un costo de acarreo anual de \(b=8\%\) y una volatilidad anual de \(\sigma=20\%\). En unidades anuales, el plazo es \(T=0.25\). Por tanto, los parámetros del modelo son
-\begin{equation}
-S_0=80,
-\qquad
-K=85,
-\qquad
-r=0.05,
-\qquad
-b=0.08,
-\qquad
-\sigma=0.20,
-\qquad
-T=0.25.
-\end{equation}
-
-Primero se obtiene la prima de la put asiática con promedio geométrico. Después, usando la misma información de mercado, se calcula la prima de la put asiática con promedio aritmético mediante una aproximación por momentos. Finalmente, ambas primas se comparan con la prima de una put europea vanilla valuada bajo el modelo generalizado de Black--Scholes con costo de acarreo.
-
-El propósito de la comparación es analizar la relación de orden entre las primas
-\begin{equation}
-P_{\mathrm{arit}},
-\qquad
-P_{\mathrm{geom}},
-\qquad
-P_{\mathrm{vanilla}},
-\end{equation}
-donde \(P_{\mathrm{arit}}\) corresponde a la put asiática aritmética, \(P_{\mathrm{geom}}\) a la put asiática geométrica y \(P_{\mathrm{vanilla}}\) a la put vanilla europea. En particular, se verifica si los resultados numéricos satisfacen
-\begin{equation}
-P_{\mathrm{arit}}
-<
-P_{\mathrm{geom}}
-<
-P_{\mathrm{vanilla}}.
-\end{equation}
+Una vez notada la importancia de este tipo de instrumentos, este trabajo analiza la valuación de opciones asiáticas de venta con tipo de promedio geométrico y aritmético. El promedio geométrico permite obtener una fórmula cerrada, mientras que el promedio aritmético requiere una aproximación por momentos. Finalmente, los resultados se comparan con la prima de una opción vanilla europea con los mismos parámetros.
 
 % Para fijar la notación, se definen las siguientes variables:
 
@@ -185,9 +149,7 @@ P_{\mathrm{vanilla}}.
 
 
 
-\section{Metodología}
-
-\subsection{Naturaleza financiera de una opción asiática}
+\section{Naturaleza financiera de una opción asiática}
 
 Una opción asiática es un derivado dependiente de la trayectoria, porque su pago no se determina únicamente por el precio final del subyacente \(S_T\), sino por algún promedio de los precios observados durante la vida del contrato. Esta característica la distingue de una opción europea vanilla, cuyo pago depende solamente del valor del subyacente en la fecha de vencimiento.
 
@@ -209,7 +171,7 @@ La Figura~\ref{fig:asian-put-oil-path} muestra un ejemplo de una put asiática s
 La dependencia respecto al promedio modifica el perfil de riesgo del derivado. Una put vanilla europea concentra toda la exposición en el precio terminal \(S_T\); en cambio, una put asiática distribuye la exposición sobre la trayectoria completa del subyacente. Por esta razón, los movimientos extremos ocurridos en una sola fecha tienen menor efecto sobre el pago final. En términos financieros, el promedio suaviza la variabilidad del subyacente que entra en la función de pago y, por ello, bajo condiciones comparables, una opción asiática suele tener una volatilidad efectiva menor y una prima inferior a la de una opción vanilla equivalente.
 
 
-\subsection{Marco probabilístico de valuación}
+\section{Marco probabilístico de valuación}
 
 Formalmente, el modelo se construye sobre un espacio de probabilidad filtrado
 \begin{equation}
@@ -297,7 +259,43 @@ siempre que el pago sea replicable dentro del mercado considerado, es decir, que
 
 La dificultad sobre la valuación depende de la forma específica de este promedio. Si \(\bar S_T=G_T\), el logaritmo del promedio geométrico es normal y existe una fórmula cerrada. Si \(\bar S_T=A_T\), el promedio aritmético es una integral de variables lognormales correlacionadas y no tiene una distribución lognormal exacta; por ello se utiliza la aproximación por momentos de Turnbull--Wakeman.
 
-\subsection{Put asiática con promedio geométrico}
+\section{Caso de estudio}
+
+El caso de estudio consiste en valuar una opción put asiática escrita sobre un activo subyacente con precio inicial \(S_0=80\), precio de ejercicio \(K=85\) y plazo de vencimiento de tres meses. Se supone una tasa libre de riesgo anual de \(r=5\%\), un costo de acarreo anual de \(b=8\%\) y una volatilidad anual de \(\sigma=20\%\). En unidades anuales, el plazo es \(T=0.25\). Por tanto, los parámetros del modelo son
+\begin{equation}
+S_0=80,
+\qquad
+K=85,
+\qquad
+r=0.05,
+\qquad
+b=0.08,
+\qquad
+\sigma=0.20,
+\qquad
+T=0.25.
+\end{equation}
+
+Primero se obtiene la prima de la put asiática con promedio geométrico. Después, usando la misma información de mercado, se calcula la prima de la put asiática con promedio aritmético mediante una aproximación por momentos. Finalmente, ambas primas se comparan con la prima de una put europea vanilla valuada bajo el modelo generalizado de Black--Scholes con costo de acarreo.
+
+El propósito de la comparación es analizar la relación de orden entre las primas
+\begin{equation}
+P_{\mathrm{arit}},
+\qquad
+P_{\mathrm{geom}},
+\qquad
+P_{\mathrm{vanilla}},
+\end{equation}
+donde \(P_{\mathrm{arit}}\) corresponde a la put asiática aritmética, \(P_{\mathrm{geom}}\) a la put asiática geométrica y \(P_{\mathrm{vanilla}}\) a la put vanilla europea. En particular, se verifica si los resultados numéricos satisfacen
+\begin{equation}
+P_{\mathrm{arit}}
+<
+P_{\mathrm{geom}}
+<
+P_{\mathrm{vanilla}}.
+\end{equation}
+
+\section{Put asiática con promedio geométrico}
 
 El promedio geométrico continuo es
 \begin{equation}
@@ -348,7 +346,7 @@ P_G=4.6922.
 \]
 }
 
-\subsection{Put asiática con promedio aritmético}
+\section{Put asiática con promedio aritmético}
 
 El promedio aritmético continuo es
 \begin{equation}
@@ -422,7 +420,7 @@ La prima aproximada de la put asiática con promedio aritmético es
 P_A=4.6415.
 \]}
 
-\subsection{Put vanilla con costo de acarreo}
+\section{Put vanilla con costo de acarreo}
 
 Para la comparación, se valúa una put europea vanilla con los mismos datos \(S_0,K,r,b,\sigma,T\). Los parámetros Black--Scholes con costo de acarreo se obtienen de la extensión estándar del modelo lognormal de \citet{black1973}, como se presenta en \citet{hull2018}:
 \begin{equation}
@@ -454,9 +452,7 @@ P_V=5.2186.
 \]
 }
 
-\section{Resultados}
-
-\subsection{Comparación y relación de orden}
+\section{Comparación y relación de orden}
 
 Las tres primas reflejan cuánta exposición conserva cada instrumento frente a movimientos adversos del subyacente. La put vanilla depende directamente del precio terminal \(S_T\). Por tanto, si al vencimiento el subyacente termina muy por debajo del precio de ejercicio, todo ese movimiento negativo entra directamente en el pago, lo que genera una compensación mayor, haciendo que la prima de la put vanilla sea más alta.
 
@@ -512,7 +508,7 @@ P_{\mathrm{vanilla}}=5.2186.
 \]
 }
 
-\section{Conclusiones}
+\section{Conclusión}
 
 El caso de estudio muestra que las opciones asiáticas son relevantes por la forma en que representan riesgos económicos reales. En muchos mercados, especialmente en materias primas y energía, las decisiones financieras no dependen únicamente del precio observado al vencimiento, sino del comportamiento promedio del activo durante un periodo. Por eso, una opción asiática puede ser una cobertura más cercana al riesgo operativo de una empresa que una opción vanilla.
 
@@ -528,6 +524,7 @@ El ejemplo de Pemex ayuda a interpretar el resultado de como una empresa expuest
 
 La valuación de estos instrumentos permite asignar una prima consistente con el riesgo modelado, pero la elección del derivado depende del riesgo que se desea cubrir. Si el riesgo económico está asociado a un precio final, una opción vanilla puede ser adecuada; si está asociado a un precio promedio durante el periodo, una opción asiática puede representar mejor la exposición real. Esta es precisamente la importancia de los derivados exóticos: adaptar el contrato financiero a la forma concreta en que aparece el riesgo en la operación de una empresa.
 
+\newpage
 \nocite{curso2026}
 \bibliographystyle{apalike}
 \bibliography{biblo}

@@ -1,7 +1,12 @@
-This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.4.26)  18 MAY 2026 00:06
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.4.26)  19 MAY 2026 02:02
  restricted system commands enabled.
-**c:/Users/herie/Downloads/opciones_asiaticas_entrega_final_project/main
-(c:/Users/herie/Downloads/opciones_asiaticas_entrega_final_project/main.tex
+**"c:/Users/herie/OneDrive - Fundacion Universidad de las Americas Puebla/uni/1
+0 Semestre Primavera/Derivados Exoticos/tareas/LOAS Valuación de opciones asi
+áticas de venta/main"
+
+("c:/Users/herie/OneDrive - Fundacion Universidad de las Americas Puebla/uni/10
+ Semestre Primavera/Derivados Exoticos/tareas/LOAS Valuación de opciones asi
+áticas de venta/main.tex"
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
@@ -1613,38 +1618,40 @@ LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
 [1{C:/Users/herie/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-<asian_put_oil_path.pdf, id=106, 710.5082pt x 407.61723pt>
+<asian_put_oil_path.pdf, id=114, 710.5082pt x 407.61723pt>
 File: asian_put_oil_path.pdf Graphic file (type pdf)
 <use asian_put_oil_path.pdf>
-Package luatex.def Info: asian_put_oil_path.pdf  used on input line 166.
+Package luatex.def Info: asian_put_oil_path.pdf  used on input line 204.
 (luatex.def)             Requested size: 328.82707pt x 188.64441pt.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.0pt on input line 167.
+(Font)              scaled to size 6.0pt on input line 205.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 167.
+(Font)              scaled to size 6.0pt on input line 205.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 167.
+(Font)              scaled to size 6.0pt on input line 205.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.0pt on input line 167.
+(Font)              scaled to size 6.0pt on input line 205.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.0pt on input line 167.
+(Font)              scaled to size 6.0pt on input line 205.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 167.
+(Font)              scaled to size 6.0pt on input line 205.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.0pt on input line 167.
+(Font)              scaled to size 6.0pt on input line 205.
 LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 6.0pt on input line 167.
+(Font)              scaled to size 6.0pt on input line 205.
 LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 6.0pt on input line 167.
+(Font)              scaled to size 6.0pt on input line 205.
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 6.0pt on input line 167.
+(Font)              scaled to size 6.0pt on input line 205.
+ [2]
 LaTeX Font Info:    Font shape `U/libusbb/m/n' will be
-(Font)              scaled to size 10.95pt on input line 178.
+(Font)              scaled to size 10.95pt on input line 216.
 LaTeX Font Info:    Font shape `U/libusbb/m/n' will be
-(Font)              scaled to size 8.0pt on input line 178.
+(Font)              scaled to size 8.0pt on input line 216.
 LaTeX Font Info:    Font shape `U/libusbb/m/n' will be
-(Font)              scaled to size 6.1pt on input line 178.
- [2<./asian_put_oil_path.pdf>] [3] [4] [5] [6] [7] [8] (./main.bbl) [9]
+(Font)              scaled to size 6.1pt on input line 216.
+
+[3<./asian_put_oil_path.pdf>] [4] [5] [6] [7] (./main.bbl [8]) [9]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux
@@ -1656,21 +1663,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5FB1DE1EFCBCE8524C4E81EC191ED1BE;1749.
+(rerunfilecheck)             Checksum: 5B7504705DBE7898F6997F2A5077442E;2061.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39471 strings out of 475900
- 156557,1373583 words of node,token memory allocated
+ 39475 strings out of 475900
+ 156561,1373583 words of node,token memory allocated
  2086 words of node memory still in use:
    32 hlist, 2 vlist, 14 rule, 1 local_par, 6 glue, 4 kern, 1 penalty, 2 glyph, 
 331 attribute, 61 glue_spec, 166 attribute_list, 2 write, 24 pdf_literal, 5 pdf_
 action, 24 pdf_colorstack nodes
-   avail lists: 1:3,2:1475,3:428,4:44,5:1714,6:51,7:13371,8:94,9:803,10:28,11:17
-99
- 60906 multiletter control sequences out of 65536+600000
+   avail lists: 1:3,2:1475,3:428,4:44,5:1720,6:53,7:13353,8:94,9:803,10:28,11:17
+75
+ 60908 multiletter control sequences out of 65536+600000
  245 fonts using 22935743 bytes
- 98i,13n,115p,1176b,990s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,13n,115p,1283b,992s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/users/herie/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmono10-
 regular.otf>{C:/Users/herie/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libert
 inust1math/libusBB.enc}<C:/Users/herie/AppData/Local/Microsoft/Windows/Fonts/ebg
@@ -1686,9 +1693,9 @@ al/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/herie/AppData
 a/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/herie/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/herie/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb>
-Output written on main.pdf (9 pages, 421895 bytes).
+Output written on main.pdf (9 pages, 422020 bytes).
 
-PDF statistics: 296 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 1048576)
- 328 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 304 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 1048576)
+ 344 words of extra memory for PDF output out of 10000 (max. 100000000)
 
